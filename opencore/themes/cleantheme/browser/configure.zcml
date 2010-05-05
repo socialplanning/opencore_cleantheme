@@ -23,7 +23,7 @@
 
   <browser:resourceDirectory
      name="indaba_css"
-     directory="img"
+     directory="css"
      />
 
   <browser:page
@@ -52,6 +52,15 @@
      permission="zope2.View"
      view="opencore.nui.main.search.HomeView"
      layer=".interfaces.ICleanThemeSkin"
+     />
+
+  <browser:viewlet
+     for="*"
+     name="indaba.css"
+     manager="opencore.browser.interfaces.IExtraHead"
+     permission="zope2.View"
+     layer=".interfaces.ICleanThemeSkin"
+     template="includes.pt"
      />
 
   <browser:page
