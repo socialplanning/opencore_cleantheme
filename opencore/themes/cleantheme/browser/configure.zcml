@@ -16,6 +16,16 @@
     name="opencore_cleantheme"
     />
 
+  <browser:resourceDirectory
+     name="indaba_img"
+     directory="img"
+     />
+
+  <browser:resourceDirectory
+     name="indaba_css"
+     directory="img"
+     />
+
   <browser:page
      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
      class="opencore.nui.main.search.HomeView"

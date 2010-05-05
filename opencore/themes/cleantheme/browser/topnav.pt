@@ -2,7 +2,8 @@
 
   <h1>
     <a tal:attributes="href view/portal/absolute_url"><!-- view/area/Title -->
-      <img src="/++resource++img/indaba/indaba-logo.jpg" />
+      <img style="width: 230px; height: 121px;"
+           src="/++resource++indaba_img/indaba-logo.jpg" />
     </a>
   </h1>
 
