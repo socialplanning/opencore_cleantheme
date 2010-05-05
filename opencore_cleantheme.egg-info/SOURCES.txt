@@ -1,0 +1,16 @@
+README.txt
+setup.py
+opencore/__init__.py
+opencore/themes/__init__.py
+opencore/themes/cleantheme/__init__.py
+opencore/themes/cleantheme/browser/__init__.py
+opencore/themes/cleantheme/browser/interfaces.py
+opencore/themes/cleantheme/browser/views.py
+opencore_cleantheme.egg-info/PKG-INFO
+opencore_cleantheme.egg-info/SOURCES.txt
+opencore_cleantheme.egg-info/dependency_links.txt
+opencore_cleantheme.egg-info/entry_points.txt
+opencore_cleantheme.egg-info/namespace_packages.txt
+opencore_cleantheme.egg-info/not-zip-safe
+opencore_cleantheme.egg-info/requires.txt
+opencore_cleantheme.egg-info/top_level.txt

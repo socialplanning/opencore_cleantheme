@@ -1,0 +1,35 @@
+
+<div id="oc-topnav-usermenu" class="oc-dropdown-list">
+
+  <span class="oc-dropdown-container"
+      tal:define="auth view/loggedin;
+                  memfolder_url view/memfolder_url;
+                  memprofile_url string:${memfolder_url}/profile;
+                  memaccount_url string:${memfolder_url}/account"
+      tal:condition="python: auth and memfolder_url">
+      <a tal:attributes="href memprofile_url"><span
+          tal:replace="view/member_info/id"/>
+        <span class="oc-usermenu-messagecount" tal:condition="python:view.user_message_count > 0">
+              <span id="num_updates_top" tal:content="string:(${view/user_message_count})" />
+        </span>
+      </a>
+    <tal:mystuffmenu replace="structure context/topnav-mystuff-menu" />
+  </span>
+
+  <form tal:condition="not:view/loggedin" action="/login" method="POST">
+    <br />
+    <br />
+    <input name="__ac_name" id="__ac_name" />
+    <input type="submit" name="login" value="Sign in"
+	   style="font-size: 14px; font-weight: bold; background-color: darkgray; margin-left: 1.5em; padding: 0.15em 1.25em;
+		  text-transform: uppercase; color: white !important;" />
+    <hr style="line-height: 0.5em; margin: 0;" />
+    <input name="__ac_password" id="__ac_password" type="password" />
+    <input type="submit" name="join" value="Join"
+	   style="font-size: 14px; font-weight: bold; background-color: darkgray; margin-left: 1.5em; padding: 0.15em 1.25em;
+		  text-transform: uppercase; color: white !important;" 
+	   onclick="window.location='/join?id='+getElementById('__ac_name').value; return false;"/>
+
+  </form>
+
+</div>

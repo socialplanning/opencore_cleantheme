@@ -1,0 +1,5 @@
+
+      # -*- Entry points: -*-
+      [topp.zcmlloader]
+      opencore = opencore.themes.cleantheme
+        

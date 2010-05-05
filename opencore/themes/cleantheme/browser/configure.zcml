@@ -1,0 +1,65 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:meta="http://namespaces.zope.org/meta"
+    i18n_domain="opencore"
+    >
+
+ <!-- Using a skin allows us to layer images, etc. on top of the opencore ones -->
+ <!-- just hit zope at a url like so:
+       uri_template = http://localhost:8001/VirtualHostBase/{wsgi.url_scheme}/{HTTP_HOST}/++skin++avata/openplans/VirtualHostRoot{vh_SCRIPT_NAME}
+-->
+ <interface
+    interface=".interfaces.ICleanThemeSkin"
+    type="zope.publisher.interfaces.browser.IBrowserSkinType"
+    name="opencore_cleantheme"
+    />
+
+  <browser:page
+     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+     class="opencore.nui.main.search.HomeView"
+     permission="zope2.View"
+     name="view"
+     template="home.pt"
+     layer=".interfaces.ICleanThemeSkin"
+     />
+
+  <browser:page
+     for="*"
+     class="opencore.browser.topnav.topnav.TopNavView"
+     permission="zope2.View"
+     name="oc-topnav"
+     template="topnav.pt"
+     layer=".interfaces.ICleanThemeSkin"
+     />
+
+  <browser:viewlet
+     for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+     class=".views.GetStarted"
+     name="opencore.getstarted"
+     manager="opencore.project.browser.interfaces.IProjectSidebar"
+     permission="zope2.View"
+     view="opencore.nui.main.search.HomeView"
+     layer=".interfaces.ICleanThemeSkin"
+     />
+
+  <browser:page
+     for="*"
+     class="opencore.browser.topnav.topnav.AuthMenuView"
+     permission="zope2.View"
+     name="topnav-auth-user-menu"
+     template="user-menu.pt"
+     layer=".interfaces.ICleanThemeSkin"
+     />
+
+  <browser:page
+     for="*"
+     class="opencore.browser.topnav.topnav.AnonMenuView"
+     permission="zope2.View"
+     name="topnav-anon-user-menu"
+     template="user-menu.pt"
+     layer=".interfaces.ICleanThemeSkin"
+     />
+
+</configure>
