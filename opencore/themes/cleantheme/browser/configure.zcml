@@ -59,8 +59,8 @@
      name="indaba.css"
      manager="opencore.browser.interfaces.IExtraHead"
      permission="zope2.View"
-     layer=".interfaces.ICleanThemeSkin"
      template="includes.pt"
+     layer=".interfaces.ICleanThemeSkin"
      />
 
   <browser:page

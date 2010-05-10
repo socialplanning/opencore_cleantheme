@@ -6,5 +6,20 @@
     i18n_domain="zope"
     >
 
+  <adapter
+    for="*"
+    provides="zope.traversing.interfaces.IPathAdapter"
+    factory=".utils.Tales"
+    name="opencore_doors"
+    trusted="true"
+    />
+
+  <content class=".utils.Tales">
+    <!-- Must be set to zope2.Public.
+         See http://www.openplans.org/projects/opencore/lists/opencore-dev/archive/2008/12/1229475623696/forum_view -->
+    <require permission="zope2.Public"                   
+             attributes="static_root" />
+  </content> 
+   
   <include package=".browser" />
 </configure>

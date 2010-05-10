@@ -16,7 +16,8 @@
       <div id="oc-content-main" class="oc-content-main-fullWidth">
 	<div class="oc-clearAfter">
           <div id="oc-home-content" class="oc-content-main">
-	    <img src="/++resource++indaba_img/indaba-splash.jpg" style="width: 100%"/>
+	    <img style="width: 100%"
+		 tal:attributes="src string:${view/opencore_doors:static_root}/frontpage-image.jpg" />
           </div><!-- oc-home-content -->
 	  
 	  <div style="overflow: hidden; padding-left: 1em;">

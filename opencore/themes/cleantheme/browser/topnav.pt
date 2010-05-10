@@ -3,7 +3,7 @@
   <h1>
     <a tal:attributes="href view/portal/absolute_url"><!-- view/area/Title -->
       <img style="width: 230px; height: 121px;"
-           src="/++resource++indaba_img/indaba-logo.jpg" />
+           tal:attributes="src string:${view/opencore_doors:static_root}/topnav-logo.jpg" />
     </a>
   </h1>
 
