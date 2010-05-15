@@ -22,13 +22,11 @@
   </form>
 
   <form tal:condition="not:view/loggedin" action="/login" method="POST">
-    <br />
-    <br />
     <input name="__ac_name" id="__ac_name" />
     <input type="submit" name="login" value="Sign in"
 	   style="font-size: 14px; font-weight: bold; background-color: darkgray; margin-left: 1.5em; padding: 0.15em 1.25em;
 		  text-transform: uppercase; color: white !important;" />
-    <hr style="line-height: 0.5em; margin: 0;" />
+
     <input name="__ac_password" id="__ac_password" type="password" />
     <input type="submit" name="join" value="Join"
 	   style="font-size: 14px; font-weight: bold; background-color: darkgray; margin-left: 1.5em; padding: 0.15em 1.25em;
