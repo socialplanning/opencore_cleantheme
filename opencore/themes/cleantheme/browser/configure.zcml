@@ -37,7 +37,7 @@
 
   <browser:page
      for="*"
-     class="opencore.browser.topnav.topnav.TopNavView"
+     class=".topnav.TopNavView"
      permission="zope2.View"
      name="oc-topnav"
      template="topnav.pt"

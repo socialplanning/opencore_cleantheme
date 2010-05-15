@@ -7,13 +7,6 @@
     </a>
   </h1>
 
-  <tal:comment replace="nothing">
-    <!-- old topnav generation -->
-    <tal:contextMenu replace="structure view/contextmenu" />
-  </tal:comment>
-
-  <br>
-
   <ul id="oc-topnav-context" class="oc-clearAfter"
       tal:define="contextmenu view/contextmenu"
       tal:condition="contextmenu"

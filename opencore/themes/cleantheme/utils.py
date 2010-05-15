@@ -1,3 +1,4 @@
+from Acquisition import aq_inner, aq_parent
 from zope import component
 from zope import interface
 from zope.traversing.interfaces import IPathAdapter
@@ -15,3 +16,4 @@ class Tales(object):
 
     def static_root(self):
         return static_root_for_domain(self.request.environ)
+
