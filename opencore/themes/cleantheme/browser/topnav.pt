@@ -14,26 +14,29 @@
 
   <br>
 
-  <ul style="float: left; width: 60%;" id="oc-topnav-context" class="oc-clearAfter"
+  <ul id="oc-topnav-context" class="oc-clearAfter"
       tal:define="contextmenu view/contextmenu"
       tal:condition="contextmenu"
       tal:content="structure contextmenu"
       />
 
-    <form style="float: right;" name="searchform" id="oc-sitesearch"
-          tal:attributes="action string:${view/portal/absolute_url}/sitesearch"
-          onsubmit="return liveSearchSubmit()">
-      <input id="searchGadget" name="search_for"
-             type="text" size="30" title="Search site"
-             accesskey="4" class="oc-input-typeText"
-	     i18n:attributes="title topnav_site_search_label"
-	     />
-      <button style="font-size: 10px; font-weight: bold; background-color: darkgray;
-		     text-transform: uppercase; color: white !important;">Search</button>
-    </form>
+  <div id="oc-topnav-tab">
+    <div id="oc-topnav-globalmenu-container">
+      <form style="float: right;" name="searchform" id="oc-sitesearch"
+            tal:attributes="action string:${view/portal/absolute_url}/sitesearch"
+            onsubmit="return liveSearchSubmit()">
+	<input id="searchGadget" name="search_for"
+               type="text" size="30" title="Search site"
+               accesskey="4" class="oc-input-typeText"
+	       i18n:attributes="title topnav_site_search_label"
+	       />
+	<button style="font-size: 10px; font-weight: bold; background-color: darkgray;
+		       text-transform: uppercase; color: white !important;">Search</button>
+      </form>
+    </div>
+
     <br style="line-height: 2em;"/>
 
-  <div id="oc-topnav-tab">
     <div id="oc-topnav-usermenu-container" tal:content="structure view/usermenu" />
   </div>   
 

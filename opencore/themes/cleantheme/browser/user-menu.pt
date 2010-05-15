@@ -1,11 +1,11 @@
 
-<div id="oc-topnav-usermenu" class="oc-dropdown-list">
-
+<div id="oc-topnav-usermenu" class="oc-dropdown-list"
+     tal:define="auth view/loggedin;
+                 memfolder_url view/memfolder_url;
+                 memprofile_url string:${memfolder_url}/profile;
+                 memaccount_url string:${memfolder_url}/account"
+     >
   <span class="oc-dropdown-container"
-      tal:define="auth view/loggedin;
-                  memfolder_url view/memfolder_url;
-                  memprofile_url string:${memfolder_url}/profile;
-                  memaccount_url string:${memfolder_url}/account"
       tal:condition="python: auth and memfolder_url">
       <a tal:attributes="href memprofile_url"><span
           tal:replace="view/member_info/id"/>
@@ -15,6 +15,11 @@
       </a>
     <tal:mystuffmenu replace="structure context/topnav-mystuff-menu" />
   </span>
+  <form action="/logout" method="GET" tal:condition="auth" style="display: inline">
+    <input type="submit" name="logout" value="Sign out"
+	   style="font-size: 14px; font-weight: bold; background-color: darkgray; margin-left: 1.5em; padding: 0.15em 1.25em;
+		  text-transform: uppercase; color: white !important;" />
+  </form>
 
   <form tal:condition="not:view/loggedin" action="/login" method="POST">
     <br />
