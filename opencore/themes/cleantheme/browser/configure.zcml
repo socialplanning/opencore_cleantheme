@@ -90,4 +90,12 @@
      layer=".interfaces.ICleanThemeSkin"
      />
 
+  <browser:page
+     for="opencore.interfaces.IOpenSiteRoot"
+     class=".join.BecomingAMemberView"
+     permission="zope.Public"
+     name="becoming-a-member"
+     layer=".interfaces.ICleanThemeSkin"
+     />
+
 </configure>

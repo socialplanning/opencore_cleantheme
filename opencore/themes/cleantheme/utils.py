@@ -3,6 +3,9 @@ from zope import component
 from zope import interface
 from zope.traversing.interfaces import IPathAdapter
 
+def static_base():
+    return '/home/openscout/open.indaba-network.net/static_files'
+
 def static_root_for_domain(environ):
     domain = environ['HTTP_X_FORWARDED_SERVER']
     return "/++static++/%s" % domain
