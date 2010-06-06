@@ -35,6 +35,15 @@
      layer=".interfaces.ICleanThemeSkin"
      />
 
+  <browser:viewlet
+     for="*"
+     name="indaba.footer"
+     manager="opencore.browser.interfaces.IExtraFooter"
+     permission="zope2.View"
+     template="extra-footer.pt"
+     layer=".interfaces.ICleanThemeSkin"
+     />
+
   <browser:page
      for="*"
      class=".topnav.TopNavView"
@@ -43,7 +52,7 @@
      template="topnav.pt"
      layer=".interfaces.ICleanThemeSkin"
      />
-
+ 
   <browser:viewlet
      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
      class=".views.GetStarted"
