@@ -10,17 +10,13 @@ class TermsOfUseViewlet(ViewletBase):
     render = ViewPageTemplateFile('termsofuse.pt')
 
     def validate(self):
-        self.errors = {}
-
         view = self.__parent__
         request = self.request
 
         if not request.form.has_key('termsofuse'):
-            self.errors = {"termsofuse": "You must agree to the terms of use"}
-            return self.errors
+            return {"termsofuse": "You must agree to the terms of use"}
 
         if not request.form['termsofuse']:
-            self.errors = {"termsofuse": "You must agree to the terms of use"}
-            return self.errors
+            return {"termsofuse": "You must agree to the terms of use"}
 
-        return self.errors
+        return {}

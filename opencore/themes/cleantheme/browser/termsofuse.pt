@@ -12,7 +12,7 @@
     </span>
 
     <span id="oc-termsofuse-error" class="oc-form-error"
-          tal:content="view/errors/termsofuse | nothing">
+          tal:content="view/__parent__/errors/termsofuse | nothing">
       
     </span>
   </td>
