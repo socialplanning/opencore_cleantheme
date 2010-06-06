@@ -99,4 +99,12 @@
      template="becoming-a-member.pt"
      />
 
+  <browser:viewlet
+     name="indaba.termsofuse"
+     for="*"
+     manager="opencore.account.viewlet_manager.ICreateAccount"
+     class=".views.TermsOfUseViewlet"
+     permission="zope2.View"
+     />
+
 </configure>
