@@ -92,10 +92,11 @@
 
   <browser:page
      for="opencore.interfaces.IOpenSiteRoot"
-     class=".join.BecomingAMemberView"
      permission="zope.Public"
+     class="opencore.browser.base.BaseView"
      name="becoming-a-member"
      layer=".interfaces.ICleanThemeSkin"
+     template="becoming-a-member.pt"
      />
 
 </configure>
