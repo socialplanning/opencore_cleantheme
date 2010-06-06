@@ -15,23 +15,33 @@
       </a>
     <tal:mystuffmenu replace="structure context/topnav-mystuff-menu" />
   </span>
-  <form action="/logout" method="GET" tal:condition="auth" style="display: inline">
+  <form action="/logout" method="GET" tal:condition="auth" 
+	style="float: right;">
     <input type="submit" name="logout" value="Sign out"
 	   style="font-size: 14px; font-weight: bold; background-color: darkgray; margin-left: 1.5em; padding: 0.15em 1.25em;
 		  text-transform: uppercase; color: white !important;" />
   </form>
 
-  <form tal:condition="not:view/loggedin" action="/login" method="POST">
-    <input name="__ac_name" id="__ac_name" />
+  <form style="float: right" tal:condition="not:view/loggedin" action="/login" method="POST">
+    <input size="15" name="__ac_name" id="__ac_name" />
+
     <input type="submit" name="login" value="Sign in"
 	   style="font-size: 14px; font-weight: bold; background-color: darkgray; margin-left: 1.5em; padding: 0.15em 1.25em;
 		  text-transform: uppercase; color: white !important;" />
+    <br />
+    <label for="__ac_name">Username</label>
+    <br />
 
-    <input name="__ac_password" id="__ac_password" type="password" />
+    <input size="15" name="__ac_password" id="__ac_password" type="password" />
     <input type="submit" name="join" value="Join"
 	   style="font-size: 14px; font-weight: bold; background-color: darkgray; margin-left: 1.5em; padding: 0.15em 1.25em;
 		  text-transform: uppercase; color: white !important;" 
 	   onclick="window.location='/join?id='+getElementById('__ac_name').value; return false;"/>
+
+    <br />
+    <label for="__ac_name">Password</label>
+    <br />
+
 
   </form>
 

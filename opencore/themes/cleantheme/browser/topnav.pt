@@ -30,7 +30,9 @@
 
     <br style="line-height: 2em;"/>
 
-    <div id="oc-topnav-usermenu-container" tal:content="structure view/usermenu" />
+    <div style="border-top: 2px dotted white;"
+	 id="oc-topnav-usermenu-container" 
+	 tal:content="structure view/usermenu" />
   </div>   
 
 </div>
