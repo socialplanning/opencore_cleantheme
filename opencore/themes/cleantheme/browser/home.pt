@@ -29,17 +29,7 @@
 	</div>
 	<br />
 
-	<h2 class="oc-feed-title" style="text-align: center">
-	  Featured projects
-	  <a style="font-size: 8px"
-	     tal:condition="view/admin_loggedin"
-	     href="/feature-project">
-	    (edit featured projects)
-	  </a>
-	</h2>
-	<div class="featuredprojects oc-clearAfter"
-	     tal:content="structure here/@@featured-projects">
-	</div>
+	<tal:foo replace="structure here/@@featured-projects" />
         
 	<br />
 
