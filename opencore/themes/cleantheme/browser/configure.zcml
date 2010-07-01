@@ -92,11 +92,29 @@
 
   <browser:page
      for="opencore.interfaces.IOpenSiteRoot"
-     permission="zope.Public"
+     permission="zope2.View"
      class="opencore.browser.base.BaseView"
      name="becoming-a-member"
      layer=".interfaces.ICleanThemeSkin"
      template="becoming-a-member.pt"
+     />
+
+  <browser:page
+     for="opencore.interfaces.IOpenSiteRoot"
+     permission="zope2.View"
+     class="opencore.browser.base.BaseView"
+     name="about"
+     layer=".interfaces.ICleanThemeSkin"
+     template="about.pt"
+     />
+
+  <browser:page
+     for="opencore.interfaces.IOpenSiteRoot"
+     permission="zope2.View"
+     class="opencore.browser.base.BaseView"
+     name="contact"
+     layer=".interfaces.ICleanThemeSkin"
+     template="contact.pt"
      />
 
   <browser:viewlet

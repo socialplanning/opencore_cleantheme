@@ -1,0 +1,32 @@
+<html i18n:domain="opencore" metal:use-macro="here/@@standard_macros/master">
+  <body>
+    <head>
+      <title metal:fill-slot="title"
+             tal:content="string:About - ${view/portal_title}" />
+    </head>
+
+    <div metal:fill-slot="content">
+
+      <div id="oc-content-main">
+	
+        <div class="oc-headingBlock">
+          <h1 tal:content="string:About ${view/portal_title}" />
+        </div>
+	<div tal:replace="structure view/portal/contact-page/@@raw-view" />
+      </div>
+
+      <div id="oc-content-sidebar">
+        <div i18n:translate="about_let_us_know" class="oc-getstarted">
+          <h2>Help!</h2>
+          <p>We're here to help you. If you have a question, 
+            <a tal:attributes="href string:${context/portal_url}/contact-site-admin" 
+	       i18n:name="about_let_us_know_url">
+	      <span i18n:translate="let_us_know">let us know</span>
+            </a>.
+          </p>
+        </div>
+      </div>
+    </div><!-- content-fill-slot -->
+
+  </body>
+</html>
