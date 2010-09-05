@@ -103,18 +103,9 @@
      for="opencore.interfaces.IOpenSiteRoot"
      permission="zope2.View"
      class="opencore.browser.base.BaseView"
-     name="about"
+     name="about-block"
      layer=".interfaces.ICleanThemeSkin"
-     template="about.pt"
-     />
-
-  <browser:page
-     for="opencore.interfaces.IOpenSiteRoot"
-     permission="zope2.View"
-     class="opencore.browser.base.BaseView"
-     name="contact"
-     layer=".interfaces.ICleanThemeSkin"
-     template="contact.pt"
+     template="about-block.pt"
      />
 
   <browser:viewlet
