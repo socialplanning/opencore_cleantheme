@@ -1,8 +1,16 @@
 <html i18n:domain="opencore" metal:use-macro="here/@@standard_macros/master">
   <body>
     <head>
+      <title metal:fill-slot="title">
+        <tal:title i18n:translate="about_portal_title">
+          About - <tal:dummy tal:replace="view/portal_title" i18n:name="portal_title" />
+      </tal:title>
+    </title>
+   <!-- #TODO: Delete this
       <title metal:fill-slot="title"
              tal:content="string:About - ${view/portal_title}" />
+  -->
+
     </head>
 
     <div metal:fill-slot="content">
@@ -20,8 +28,8 @@
           <h2>Help!</h2>
           <p>We're here to help you. If you have a question, 
             <a tal:attributes="href string:${context/portal_url}/contact-site-admin" 
-	       i18n:name="about_let_us_know_url">
-	      <span i18n:translate="let_us_know">let us know</span>
+               i18n:name="about_let_us_know_url">
+               <span i18n:translate="let_us_know">let us know</span>
             </a>.
           </p>
         </div>

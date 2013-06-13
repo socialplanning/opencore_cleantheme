@@ -1,12 +1,12 @@
-<tr>
+<tr i18n:domain="opencore">
   <th class="oc-form-label">
-    <label for="termsofuse">Terms of use</label>
+    <label for="termsofuse" i18n:translate="">Terms of use</label>
   </th>
   <td class="oc-form-value">
     <input type="checkbox" name="termsofuse" id="termsofuse"/>  
   </td>
   <td class="oc-form-help">
-    <span class="oc-form-context">
+    <span class="oc-form-context" i18n:translate="">
       The terms of use are described to the left. 
       You must agree to the terms of use in order to join the site.
     </span>

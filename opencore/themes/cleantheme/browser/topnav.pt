@@ -19,20 +19,20 @@
             tal:attributes="action string:${view/portal/absolute_url}/sitesearch"
             onsubmit="return liveSearchSubmit()">
 	<input id="searchGadget" name="search_for"
-               type="text" size="30" title="Search site"
-               accesskey="4" class="oc-input-typeText"
+         type="text" size="30" title="Search site"
+         accesskey="4" class="oc-input-typeText"
 	       i18n:attributes="title topnav_site_search_label"
 	       />
 	<button style="font-size: 10px; font-weight: bold; background-color: darkgray;
-		       text-transform: uppercase; color: white !important;">Search</button>
+		       text-transform: uppercase; color: white !important;" i18n:translate="">Search</button>
       </form>
     </div>
 
     <br style="line-height: 2em;"/>
 
     <div style="border-top: 2px dotted white;"
-	 id="oc-topnav-usermenu-container" 
-	 tal:content="structure view/usermenu" />
+         id="oc-topnav-usermenu-container" 
+         tal:content="structure view/usermenu" />
   </div>   
 
 </div>

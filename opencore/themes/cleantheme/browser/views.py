@@ -1,5 +1,6 @@
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.Five.viewlet.viewlet import ViewletBase
+from opencore.i18n import _
 from opencore.nui.main.view import GetStarted as GetStartedBase
 
 class GetStarted(GetStartedBase):
@@ -14,9 +15,9 @@ class TermsOfUseViewlet(ViewletBase):
         request = self.request
 
         if not request.form.has_key('termsofuse'):
-            return {"termsofuse": "You must agree to the terms of use"}
+            return {"termsofuse": _(u"You must agree to the terms of use")}
 
         if not request.form['termsofuse']:
-            return {"termsofuse": "You must agree to the terms of use"}
+            return {"termsofuse": _(u"You must agree to the terms of use")}
 
         return {}

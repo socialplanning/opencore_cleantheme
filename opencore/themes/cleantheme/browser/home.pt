@@ -3,8 +3,8 @@
     <title metal:fill-slot="title">
       <div tal:replace="view/portal_title" />:
       <tal:title i18n:translate="home_window_title">
-    free project management tools, wikis, blogs, mailing lists and task
-    tracking for neighborhood and global communities.
+        free project management tools, wikis, blogs, mailing lists and task
+        tracking for neighborhood and global communities.
       </tal:title>
    </title>
 
@@ -45,7 +45,8 @@
                                        src string:${project/getURL}/logo_thumb" />
                 </a>
                 <h3 class="oc-feed-item-title">
-                  <a tal:attributes="href python:view.project_url(project.getId)" tal:content="project/Title" />
+                  <a tal:attributes="href python:view.project_url(project.getId)" 
+                     tal:content="project/Title" />
                 </h3>
                 <p i18n:translate="home_project_created" class="oc-feed-item-data oc-discreetText">
                   created
@@ -69,10 +70,12 @@
                     <img class="oc-project-logo" tal:attributes="src string:${project/getURL}/logo_thumb; alt project/Title; title project/Title" />
                 </a>
                 <h3 class="oc-feed-item-title">
-                  <a href="" tal:attributes="href python:view.project_url(project.getId)" tal:content="project/Title" />
+                  <a href="" tal:attributes="href python:view.project_url(project.getId)" 
+                     tal:content="project/Title" />
                 </h3>
-                <p class="oc-feed-item-data oc-discreetText" tal:define="nmembers python: view.n_project_members(project)"
-		   i18n:translate="home_project_num_members">
+                <p class="oc-feed-item-data oc-discreetText" 
+                   tal:define="nmembers python: view.n_project_members(project)"
+                   i18n:translate="home_project_num_members">
                   <span i18n:name="num_project_members" tal:replace="nmembers" /> member<span i18n:name="num_project_members_string" tal:condition="python: nmembers != 1" tal:replace="string:s" />
                 </p>
                 <p class="oc-feed-item-data oc-discreetText" i18n:translate="home_project_updated">
