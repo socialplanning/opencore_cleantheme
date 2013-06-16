@@ -1,0 +1,138 @@
+# translation of opencore.po to Spanish
+# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2013.
+# Gettext Message File for opencore
+msgid ""
+msgstr ""
+"Project-Id-Version: opencore\n"
+"POT-Creation-Date: 2013-06-16 02:09+0000\n"
+"PO-Revision-Date: 2013-06-15 20:05-0430\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: ES <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Code: es\n"
+"Language-Name: Español\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: opencore\n"
+"Language: es\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
+
+#: ../browser/user-menu.pt:35
+msgid "Join"
+msgstr "Unirse"
+
+#: ../browser/user-menu.pt:41
+msgid "Password"
+msgstr ""
+
+#: ../browser/topnav.pt:26
+msgid "Search"
+msgstr "Búsqueda"
+
+#: ../browser/user-menu.pt:27
+msgid "Sign in"
+msgstr "Ingresar"
+
+#: ../browser/user-menu.pt:20
+msgid "Sign out"
+msgstr "Salir"
+
+#: ../browser/termsofuse.pt:3
+msgid "Terms of use"
+msgstr ""
+
+#: ../browser/termsofuse.pt:9
+msgid "The terms of use are described to the left. You must agree to the terms of use in order to join the site."
+msgstr ""
+
+#: ../browser/user-menu.pt:31
+msgid "Username"
+msgstr ""
+
+#: ../browser/views.py:18
+msgid "You must agree to the terms of use"
+msgstr ""
+
+#. Default: "<h2>Help!</h2> <p>We're here to help you. If you have a question, ${about_let_us_know_url}. </p>"
+#: ../browser/contact.pt:30
+msgid "about_let_us_know"
+msgstr ""
+
+#. Default: "About - ${portal_title}"
+#: ../browser/contact.pt:6
+msgid "about_portal_title"
+msgstr ""
+
+#. Default: "Join"
+#: ../browser/get-started.pt:4
+msgid "get_started_heading"
+msgstr "¡Empezar!"
+
+#. Default: "Become a member"
+#: ../browser/get-started.pt:10
+msgid "get_started_join"
+msgstr "Se un miembro"
+
+#. Default: "log in"
+#: ../browser/get-started.pt:13
+msgid "get_started_login"
+msgstr "iniciar sesión"
+
+#. Default: "Find people"
+#: ../browser/get-started.pt:28
+msgid "get_started_people_search"
+msgstr "Buscar gente"
+
+#. Default: "Find ${project_noun}s"
+#: ../browser/get-started.pt:22
+msgid "get_started_project_search"
+msgstr "Buscar ${project_noun}s"
+
+#. Default: "Newest ${project_noun}s"
+#: ../browser/home.pt:38
+msgid "home_newest_projects"
+msgstr "Más reciente ${project_noun}s"
+
+#. Default: "created ${creation_date}"
+#: ../browser/home.pt:53
+msgid "home_project_created"
+msgstr "creado ${creation_date}"
+
+#. Default: "${num_project_members} member${num_project_members_string}"
+#: ../browser/home.pt:79
+msgid "home_project_num_members"
+msgstr ""
+
+#. Default: "last updated ${project_updated}"
+#: ../browser/home.pt:82
+msgid "home_project_updated"
+msgstr "actualizado por última vez ${project_updated}"
+
+#. Default: "Updated ${project_noun}s"
+#: ../browser/home.pt:65
+msgid "home_updated_projects"
+msgstr "${project_noun}(s) actualizado(s)"
+
+#. Default: "free project management tools, wikis, blogs, mailing lists and task tracking for neighborhood and global communities."
+#: ../browser/home.pt:5
+#, fuzzy
+msgid "home_window_title"
+msgstr "${portal_title}: herramientas de gestión de proyectos libre, wikis, bitácoras, lista de correo electrónico y sistema de seguimiento de tareas para su vecindario y comunidades globales."
+
+#. Default: "let us know"
+#: ../browser/contact.pt:32
+msgid "let_us_know"
+msgstr "háganoslo saber"
+
+#: ../browser/get-started.pt:12
+msgid "or"
+msgstr "o"
+
+#. Default: "Search site"
+#: ../browser/topnav.pt:21
+msgid "topnav_site_search_label"
+msgstr "Búsqueda de sitio"
+
