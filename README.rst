@@ -32,8 +32,6 @@ This product has been translated into
 
 - Spanish
 
-- Finnish
-
 - French
 
 - Portuguese
