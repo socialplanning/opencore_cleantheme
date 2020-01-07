@@ -1,13 +1,15 @@
 from setuptools import setup, find_packages
-import os
 
 version = '0.1dev'
+
+long_description = "Changes:\n\n%s" % open('CHANGES.txt').read()
 
 setup(
     name='opencore_cleantheme',
     version=version,
     description='A theme for OpenCore Software',
-    # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
+    long_description=long_description,
+    # Get more strings from https://pypi.org/pypi?:action=list_classifiers
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Environment :: Plugins",
@@ -44,3 +46,4 @@ setup(
       opencore = opencore.themes.cleantheme
         """,
     )
+
