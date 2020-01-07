@@ -1,1 +1,1 @@
-<tal:i18n i18n:translate="">The content of this website is licensed under a Creative Commons Attribution-Share Alike 3.0 License, unless otherwise noted by the content's producers. </tal:i18n>
+<tal:i18n i18n:domain="opencore" i18n:translate="">The content of this website is licensed under a Creative Commons Attribution-Share Alike 3.0 License, unless otherwise noted by the content's producers. </tal:i18n>

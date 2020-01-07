@@ -9,8 +9,9 @@
    </title>
 
     <metal:script fill-slot="meta">
-      <meta name="keywords" content="free wikis, free mailing lists, free blogs, free task tracking, free project management" />
-      <meta name="description" tal:attributes="content string:${view/portal_title} offers free tools to help you build an online community and promote real-world change"/>
+      <meta name="keywords" content="free wikis, free mailing lists, free blogs, free task tracking, free project management"
+            i18n:attributes="content" />
+      <meta name="description" tal:attributes="content string:${view/portal_title} offers free tools to help you build an online community and promote real-world change"/> <!-- TODO: Add i18n support for meta description -->
     </metal:script>
   </head>
   <body>
