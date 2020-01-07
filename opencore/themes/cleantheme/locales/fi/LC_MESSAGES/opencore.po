@@ -1,16 +1,19 @@
 # translation of opencore.po to Suomeksi
+# Translators:
 # Oscar Fresan Landibar <oscar.fresan@kaapeli.fi>, 2010.
+# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: opencore\n"
-"POT-Creation-Date: 2013-06-16 02:09+0000\n"
-"PO-Revision-Date: 2013-05-26 17:46-0400\n"
-"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
-"Language-Team: The Open Planning Project <opencore-dev@lists.openplans.org>\n"
+"POT-Creation-Date: 2020-01-04 15:17+0000\n"
+"PO-Revision-Date: 2020-01-06 09:51+0000\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2020\n"
+"Language-Team: Finnish (https://www.transifex.com/plone/teams/106185/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: fi\n"
 "Language-Code: fi\n"
 "Language-Name: Suomeksi\n"
 "Preferred-Encodings: latin9 utf-8\n"
@@ -40,6 +43,13 @@ msgstr ""
 msgid "Terms of use"
 msgstr ""
 
+#: ../browser/extra-footer.pt:1
+msgid ""
+"The content of this website is licensed under a Creative Commons "
+"Attribution-Share Alike 3.0 License, unless otherwise noted by the content's"
+" producers."
+msgstr ""
+
 #: ../browser/termsofuse.pt:9
 msgid "The terms of use are described to the left. You must agree to the terms of use in order to join the site."
 msgstr ""
@@ -60,6 +70,10 @@ msgstr ""
 #. Default: "About - ${portal_title}"
 #: ../browser/contact.pt:6
 msgid "about_portal_title"
+msgstr ""
+
+#: ../browser/home.pt:12
+msgid "free wikis, free mailing lists, free blogs, free task tracking, free project management"
 msgstr ""
 
 #. Default: "Join"
@@ -88,27 +102,27 @@ msgid "get_started_project_search"
 msgstr ""
 
 #. Default: "Newest ${project_noun}s"
-#: ../browser/home.pt:38
+#: ../browser/home.pt:39
 msgid "home_newest_projects"
 msgstr ""
 
 #. Default: "created ${creation_date}"
-#: ../browser/home.pt:53
+#: ../browser/home.pt:54
 msgid "home_project_created"
 msgstr ""
 
 #. Default: "${num_project_members} member${num_project_members_string}"
-#: ../browser/home.pt:79
+#: ../browser/home.pt:80
 msgid "home_project_num_members"
 msgstr ""
 
 #. Default: "last updated ${project_updated}"
-#: ../browser/home.pt:82
+#: ../browser/home.pt:83
 msgid "home_project_updated"
 msgstr ""
 
 #. Default: "Updated ${project_noun}s"
-#: ../browser/home.pt:65
+#: ../browser/home.pt:66
 msgid "home_updated_projects"
 msgstr ""
 
