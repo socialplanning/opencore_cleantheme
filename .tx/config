@@ -1,0 +1,10 @@
+[main]
+host = https://www.transifex.com
+
+[social-planning.opencore-themes-cleantheme-pot]
+file_filter = opencore/themes/cleantheme/locales/<lang>/LC_MESSAGES/opencore.po
+minimum_perc = 0
+source_file = opencore/themes/cleantheme/locales/opencore.pot
+source_lang = en
+type = PO
+
