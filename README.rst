@@ -61,6 +61,7 @@ Contribute
 
 - Issue Tracker: https://github.com/socialplanning/opencore_cleantheme/issues
 - Source Code: https://github.com/socialplanning/opencore_cleantheme
+- Documentation: https://www.coactivate.org/projects/opencore/
 - Translations: https://www.transifex.com/plone/social-planning/dashboard/
 
 
